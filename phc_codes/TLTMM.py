@@ -1,10 +1,11 @@
 # This script contains functions and classes to analyze 1D Photonic crystal
 # charecteristics by Transmission Line Transfer Matrix method
+# !! TODO After critical angle the results are not wrong.
 
 from copy import deepcopy
 from types import FunctionType
 
-from numpy import (append, arcsin, array, complex128, cos, cumsum, exp, eye,
+from numpy import (append, arcsin, array, complex128, cos, sum, cumsum, exp, eye,
                    loadtxt, ndarray, pi, sin, size, zeros, zeros_like, abs)
 from scipy.interpolate import interp1d
 

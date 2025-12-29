@@ -1,5 +1,6 @@
 # This script contains functions and classes to analyze 1D Photonic crystal
-# charecteristics by Transfer Matrix method
+# charecteristics by Transfer Matrix method\
+# !! TODO After critical angle the results are not wrong.
 
 from copy import deepcopy
 import types
