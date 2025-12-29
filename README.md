@@ -1,6 +1,9 @@
 # LAB_codes
 Codes used in lab for analysis and simulation
 
+### Starting with
+Install the repeatedly used packages by `pip install -r /path/to/requirements.txt` 
+
 ### Using "phc_codes" folder as a package in python
 copy "phc_codes" folder to the python package site (in windows, usually at - `'C:\Users\somna\AppData\Local\Programs\Python\Python31x\Lib'`) to import from anywhere. Otherwise you can keep the folder in your working directory.
 

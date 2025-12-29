@@ -1,4 +1,7 @@
-scipy
+numpy
+pandas
 matplotlib
+scipy
+ipympl
 pymoosh
 SciencePlots
