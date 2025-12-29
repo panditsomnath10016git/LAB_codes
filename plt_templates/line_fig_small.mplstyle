@@ -1,0 +1,108 @@
+## The font.size property is the default font size for text, given in points.
+## 10 pt is the standard value.
+##
+## Note that font.size controls default text sizes.  To configure
+## special text sizes tick labels, axes, labels, title, etc., see the rc
+## settings for axes and ticks.  Special text sizes can be defined
+## relative to font.size, using the following values: xx-small, x-small,
+## small, medium, large, x-large, xx-large, larger, or smaller
+
+## The font.weight property has effectively 13 values: normal, bold,
+## bolder, lighter, 100, 200, 300, ..., 900.  Normal is the same as
+## 400, and bold is 700.  bolder and lighter are relative values with
+## respect to the current weight.
+
+# Figure
+figure.figsize:     6.3, 4.8  # figure size in inches
+figure.dpi:         150 
+figure.constrained_layout.use: False  # When True, automatically make plot
+                                       # elements fit on the figure. (Not
+                                       # compatible with `autolayout`, above).
+figure.constrained_layout.h_pad:  0.04167
+figure.constrained_layout.w_pad:  0.04167
+
+## Spacing between subplots, relative to the subplot sizes.  Much smaller than for
+## tight_layout (figure.subplot.hspace, figure.subplot.wspace) as constrained_layout
+## already takes surrounding texts (titles, labels, # ticklabels) into account.
+
+figure.constrained_layout.hspace: 0.02
+figure.constrained_layout.wspace: 0.02
+
+# Axes
+axes.facecolor: white
+axes.labelcolor: black
+axes.edgecolor:  black
+
+axes.linewidth: 3
+
+axes.grid: False
+
+axes.titlesize: large
+axes.labelsize: large
+axes.titleweight:   bold
+axes.labelweight:   bold
+
+
+
+
+# Ticks
+ytick.major.size:    8
+ytick.major.width:   4
+xtick.major.size:    8
+xtick.major.width:   4
+
+ytick.minor.visible: True
+ytick.minor.size:    6
+ytick.minor.width:   3
+ytick.minor.ndivs: 3
+
+xtick.minor.visible: True
+xtick.minor.size:    6
+xtick.minor.width:   3
+xtick.minor.ndivs: 3
+
+# Lines
+lines.linewidth: 4
+#lines.linestyle: -
+#lines.color: blue
+#lines.marker: s
+lines.markersize: 12
+
+# Text
+font.size: 35
+font.weight: bold
+text.color: black
+font.sans-serif: Arial
+
+#legend
+legend.fontsize: 25
+legend.title_fontsize: 25
+
+# Figure
+figure.facecolor: white
+figure.edgecolor: white
+figure.titlesize: large
+
+# Grid
+#grid.color: 0.8
+#grid.linestyle: --
+#grid.linewidth: 0.5
+
+## The default savefig parameters can be different from the display parameters
+## e.g., you may want a higher resolution, or to make the figure
+## background white
+savefig.dpi:      150      # figure dots per inch or 'figure'
+savefig.facecolor: auto        # figure face color when saving
+savefig.edgecolor: auto        # figure edge color when saving
+savefig.format:    png         # {png, ps, pdf, svg}
+savefig.bbox:      tight    # {tight, standard}
+                               # 'tight' is incompatible with generating frames
+                               # for animation
+savefig.pad_inches:  0.1       # padding to be used, when bbox is set to 'tight'
+#savefig.directory:   .         # default directory in savefig dialog, gets updated after
+                               # interactive saves, unless set to the empty string (i.e.
+                               # the current directory); use '.' to start at the current
+                               # directory but update after interactive saves
+savefig.transparent: False     # whether figures are saved with a transparent
+                               # background by default
+savefig.orientation: portrait  # orientation of saved figure, for PostScript output only
